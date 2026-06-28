@@ -12,17 +12,17 @@ export default function WorkCard({
   keywords,
 }: Props) {
   return (
-    <div className="bg-white/50 rounded-2xl p-6 shadow-lg">
+    <div className="bg-white/50 rounded-2xl p-4 shadow-lg sm:p-6">
 
-      <h3 className="font-black text-2xl ">
+      <h3 className="font-black text-xl sm:text-2xl">
         {title}
       </h3>
 
-      <p className="text-gray-600 text-xl mb-4">
+      <p className="mb-3 text-base text-gray-600 sm:mb-4 sm:text-xl">
         {company}
       </p>
 
-      <p className="mt-2 py-2 text-xl">
+      <p className="mt-2 py-2 text-base leading-relaxed sm:text-xl">
             {description}
           </p>
 
@@ -30,7 +30,7 @@ export default function WorkCard({
         {keywords.map((keyword) => (
           <span
             key={keyword}
-            className="text-m text-gray-400"
+            className="text-sm text-gray-400 sm:text-base"
           >
             {keyword} |
           </span>

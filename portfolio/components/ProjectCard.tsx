@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface Props {
   video: string;
   title: string;
@@ -16,7 +14,7 @@ export default function ProjectCard({
   return (
     <div className="bg-white/50 rounded-2xl p-4 shadow-lg">
 
-      <div className="flex gap-4">
+      <div className="flex flex-col gap-4 md:flex-row">
 
         <video
           autoPlay
@@ -24,10 +22,16 @@ export default function ProjectCard({
           loop
           playsInline
           className="
-            w-96
-            
-            object-cover
+            aspect-video
+            w-full
+            max-h-44
             rounded-xl
+            object-cover
+            sm:max-h-56
+            md:w-80
+            md:max-h-none
+            lg:w-96
+            short-media
           "
         >
           <source
@@ -38,11 +42,11 @@ export default function ProjectCard({
 
         <div className="px-2">
 
-          <h3 className="font-black text-2xl">
+          <h3 className="font-black text-xl sm:text-2xl">
             {title}
           </h3>
 
-          <p className="mt-2 text-xl py-2">
+          <p className="mt-2 py-2 text-base leading-relaxed sm:text-xl">
             {description}
           </p>
 
@@ -50,7 +54,7 @@ export default function ProjectCard({
             {keywords.map((keyword) => (
               <span
                 key={keyword} 
-                className="text-gray-400 text-m"
+                className="text-sm text-gray-400 sm:text-base"
               >
                 {keyword} |
               </span>

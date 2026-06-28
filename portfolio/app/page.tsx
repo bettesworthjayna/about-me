@@ -25,8 +25,8 @@ export default function Home() {
           <div >
 
             <div>
-              <h1 className="text-7xl font-black mb-6">
-                Hello! I'm Jayna
+              <h1 className="mb-6 text-5xl font-black sm:text-7xl">
+                Hello! I&apos;m Jayna
                 
               </h1>
               <br/>
@@ -36,23 +36,23 @@ export default function Home() {
 
               
 
-              <p className="text-3xl leading-relaxed">
-                I'm a Software Engineer with a specialization 
-                in Artificial Intelligence and experience across 
-                AI systems, computer vision, cloud applications, 
-                firmware development, and technical leadership. I 
-                enjoy designing and building technology that solves 
+              <p className="text-xl leading-relaxed sm:text-3xl">
+                I&apos;m a Software Engineer with a specialization
+                in Artificial Intelligence and experience across
+                AI systems, computer vision, cloud applications,
+                firmware development, and technical leadership. I
+                enjoy designing and building technology that solves
                 meaningful real-world problems.
               </p>
 
             </div>
-            <div className="flex justify-end gap-4 pr-16 pt-16 ">
+            <div className="flex justify-start gap-4 pt-10 sm:justify-end sm:pr-16 sm:pt-16">
             <a
-              href="/#Contact"
+              href="#Contact"
               className="
                 flex items-center gap-4
-                px-6 py-3 max-w-42
-                text-xl
+                max-w-42 px-6 py-3
+                text-lg sm:text-xl
                 rounded-xl
                 bg-pink-900/50
                 text-white
@@ -73,11 +73,10 @@ export default function Home() {
           background="/backgrounds/work.jpeg"
         >
           <AnimatedCard>
-            <h1 className="text-4xl font-black mb-6">
+            <h1 className="mb-6 text-3xl font-black sm:text-4xl">
                   Experience
             </h1>
           </AnimatedCard>
-          <br/>
           <Timeline/>
         </Section>
 
@@ -86,7 +85,7 @@ export default function Home() {
           background="/backgrounds/projects.jpeg"
         >
            <AnimatedCard>
-            <h1 className="text-4xl font-black mb-4">
+            <h1 className="mb-4 text-3xl font-black sm:text-4xl">
                   Projects
             </h1>
           </AnimatedCard>
@@ -108,11 +107,11 @@ export default function Home() {
           background="/backgrounds/life.jpeg"
         >
           <AnimatedCard>
-            <h1 className="text-4xl font-black mb-6">
+            <h1 className="mb-6 text-3xl font-black sm:text-4xl">
                 Life and Hobbies
             </h1>
           </AnimatedCard>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid gap-6 md:grid-cols-2 md:gap-8">
             {life.map(item => (
               <AnimatedCard key={item.title}>
                 <LifeCard
@@ -126,9 +125,9 @@ export default function Home() {
 
         <section
           id="Contact"
-          className="flex justify-around px-64 py-16"
+          className="flex flex-col gap-4 px-6 py-12 sm:px-10 md:flex-row md:items-center md:justify-around lg:px-64 lg:py-16"
         >
-          <h3 className="text-3xl font-black mb-8">
+          <h3 className="text-3xl font-black md:mb-0">
             CONTACT ME
           </h3>
 
@@ -136,7 +135,7 @@ export default function Home() {
 
             <a
               href="mailto:bettesworthjayna@email.com"
-              className="flex gap-2"
+              className="flex items-center gap-2"
             >
               <Mail size={20}/>
               bettesworthjayna@gmail.com
@@ -144,7 +143,7 @@ export default function Home() {
             <a
               href="https://linkedin.com/in/jayna-bettesworth-3811a41b7"
               target="_blank"
-              className="flex gap-2"
+              className="flex items-center gap-2"
             >
               <LinkedIn size={20}/>
               LinkedIn

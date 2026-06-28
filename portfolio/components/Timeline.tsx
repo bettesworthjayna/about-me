@@ -15,18 +15,21 @@ export default function Timeline() {
   
 
   return (
-    <div ref={ref} className="relative">
+    <div ref={ref} className="relative space-y-5">
 
       {/* Background line */}
       <div
         className="
           absolute
-          left-6
-          top-0
-          h-full
+          left-3
+          top-[1.875rem]
+          h-[calc(100%-1.875rem)]
           w-1
           bg-gray-300
           -translate-x-1/2
+          sm:left-6
+          sm:top-8
+          sm:h-[calc(100%-2rem)]
         "
       />
 
@@ -38,41 +41,47 @@ export default function Timeline() {
         }}
         className="
             absolute
-            left-6
-            top-0
+            left-3
+            top-[1.875rem]
             w-1
-            h-full
+            h-[calc(100%-1.875rem)]
             bg-pink-800
             origin-top
             -translate-x-1/2
+            sm:left-6
+            sm:top-8
+            sm:h-[calc(100%-2rem)]
         "
         />
 
       {experience.map((job, index) => (
         <div
           key={job.title}
-          
+          className="relative pl-14 sm:pl-24"
         >
-          <div >
+          <div>
             <div
                 className="
                     absolute
-                    left-6
-                    w-6
-                    h-6
+                    left-3
+                    top-5
+                    w-5
+                    h-5
                     rounded-full
                     bg-pink-600
                     border-4
                     border-white
                     shadow
                     -translate-x-1/2
+                    sm:left-6
+                    sm:w-6
+                    sm:h-6
                 "
             />
-            <div className="ml-22 w-full md:w-3/4">
+            <div className="w-full">
             <AnimatedCard key={job.title} delay={index * 0.15}>
                 <WorkCard {...job} />
             </AnimatedCard>
-            <br/>
             </div>
           </div>
         </div>
