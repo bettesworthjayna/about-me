@@ -16,16 +16,16 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main className="bg-pink-50">
+      <main className="bg-pink-100">
 
         <Section
           id="About"
           background="/backgrounds/about.jpeg"
         >
-          <div >
+          <div className="px-16">
 
             <div>
-              <h1 className="mb-6 text-5xl font-black sm:text-7xl">
+              <h1 className="mb-6 text-5xl font-black sm:text-6xl">
                 Hello! I&apos;m Jayna
                 
               </h1>
@@ -36,7 +36,7 @@ export default function Home() {
 
               
 
-              <p className="text-xl leading-relaxed sm:text-3xl">
+              <p className="text-xl leading-relaxed sm:text-2xl">
                 I&apos;m a Software Engineer with a specialization
                 in Artificial Intelligence and experience across
                 AI systems, computer vision, cloud applications,

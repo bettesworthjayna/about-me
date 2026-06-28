@@ -15,7 +15,7 @@ export default function Section({
       className="relative min-h-svh flex items-start justify-center overflow-hidden py-24 sm:items-center sm:py-28"
     >
       <div
-        className="section-background absolute inset-0 bg-cover bg-center bg-fixed"
+        className="section-background absolute inset-0 bg-center bg-fixed"
         style={{
           backgroundImage: `url(${background})`,
         }}
