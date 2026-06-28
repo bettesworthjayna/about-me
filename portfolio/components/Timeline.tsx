@@ -21,7 +21,7 @@ export default function Timeline() {
       <div
         className="
           absolute
-          left-1/2
+          left-6
           top-0
           h-full
           w-1
@@ -38,7 +38,7 @@ export default function Timeline() {
         }}
         className="
             absolute
-            left-1/2
+            left-6
             top-0
             w-1
             h-full
@@ -51,20 +51,13 @@ export default function Timeline() {
       {experience.map((job, index) => (
         <div
           key={job.title}
-          className={`
-            flex mb-20
-            ${
-              index % 2 === 0
-                ? "justify-start"
-                : "justify-end"
-            }
-          `}
+          
         >
-          <div className="w-5/12">
+          <div >
             <div
                 className="
                     absolute
-                    left-1/2
+                    left-6
                     w-6
                     h-6
                     rounded-full
@@ -75,9 +68,12 @@ export default function Timeline() {
                     -translate-x-1/2
                 "
             />
+            <div className="ml-22 w-full md:w-3/4">
             <AnimatedCard key={job.title} delay={index * 0.15}>
                 <WorkCard {...job} />
             </AnimatedCard>
+            <br/>
+            </div>
           </div>
         </div>
       ))}

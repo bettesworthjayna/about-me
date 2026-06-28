@@ -14,11 +14,11 @@ export default function WorkCard({
   return (
     <div className="bg-white/50 rounded-2xl p-6 shadow-lg">
 
-      <h3 className="font-black text-2xl uppercase">
+      <h3 className="font-black text-2xl ">
         {title}
       </h3>
 
-      <p className="text-gray-400 text-xl mb-4">
+      <p className="text-gray-600 text-xl mb-4">
         {company}
       </p>
 

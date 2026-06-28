@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main>
+      <main className="bg-pink-50">
 
         <Section
           id="About"

@@ -38,7 +38,7 @@ export default function ProjectCard({
 
         <div className="px-2">
 
-          <h3 className="font-black uppercase text-2xl">
+          <h3 className="font-black text-2xl">
             {title}
           </h3>
 
