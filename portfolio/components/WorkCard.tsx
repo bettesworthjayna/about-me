@@ -22,7 +22,7 @@ export default function WorkCard({
         {company}
       </p>
 
-      <p className="mt-2 py-2 text-base leading-relaxed sm:text-xl">
+      <p className="mt-2 py-2 text-base leading-relaxed sm:text-l text-black text-m ">
             {description}
           </p>
 

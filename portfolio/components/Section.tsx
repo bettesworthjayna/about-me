@@ -12,7 +12,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className="relative min-h-svh flex items-start justify-center overflow-hidden py-24 sm:items-center sm:py-28"
+      className="relative min-h-svh flex items-start justify-center overflow-hidden py-24 px-50 sm:items-center sm:py-28"
     >
       <div
         className="section-background absolute inset-0 bg-center bg-fixed"

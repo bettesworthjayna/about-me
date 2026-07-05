@@ -31,7 +31,7 @@ export default function ProjectCard({
             {title}
           </h3>
 
-          <p className="mt-2 text-base leading-relaxed sm:text-xl">
+          <p className="mt-2 text-base leading-relaxed sm:text-l text-black">
             {description}
           </p>
 
