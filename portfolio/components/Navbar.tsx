@@ -10,7 +10,7 @@ const sections = [
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 z-50 w-full bg-white/50 backdrop-blur-md shadow">
+    <nav className="fixed top-0 z-50 w-full bg-white/50 backdrop-blur-md shadow text-black">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
 
         <h1 className="font-bold text-xl">

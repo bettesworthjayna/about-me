@@ -12,9 +12,9 @@ export default function WorkCard({
   keywords,
 }: Props) {
   return (
-    <div className="bg-white/50 rounded-2xl p-4 shadow-lg sm:p-6">
+    <div className="bg-white/50 rounded-2xl p-4 shadow-lg sm:p-6 text-black">
 
-      <h3 className="font-black text-xl sm:text-2xl">
+      <h3 className=" text-xl sm:text-2xl">
         {title}
       </h3>
 

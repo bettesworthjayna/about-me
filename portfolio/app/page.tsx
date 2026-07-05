@@ -25,7 +25,7 @@ export default function Home() {
           <div className="px-16">
 
             <div>
-              <h1 className="mb-6 text-5xl font-black sm:text-6xl">
+              <h1 className="mb-6 text-5xl text-black sm:text-6xl">
                 Hello! I&apos;m Jayna
                 
               </h1>
@@ -36,7 +36,7 @@ export default function Home() {
 
               
 
-              <p className="text-xl leading-relaxed sm:text-2xl">
+              <p className="text-xl text-black leading-relaxed sm:text-2xl">
                 I&apos;m a Software Engineer with a specialization
                 in Artificial Intelligence and experience across
                 AI systems, computer vision, cloud applications,
@@ -73,7 +73,7 @@ export default function Home() {
           background="/backgrounds/work.jpeg"
         >
           <AnimatedCard>
-            <h1 className="mb-6 text-3xl font-black sm:text-4xl">
+            <h1 className="mb-6 text-3xl text-black sm:text-4xl">
                   Experience
             </h1>
           </AnimatedCard>
@@ -85,7 +85,7 @@ export default function Home() {
           background="/backgrounds/projects.jpeg"
         >
            <AnimatedCard>
-            <h1 className="mb-4 text-3xl font-black sm:text-4xl">
+            <h1 className="mb-4 text-3xl text-black sm:text-4xl">
                   Projects
             </h1>
           </AnimatedCard>
@@ -107,7 +107,7 @@ export default function Home() {
           background="/backgrounds/life.jpeg"
         >
           <AnimatedCard>
-            <h1 className="mb-6 text-3xl font-black sm:text-4xl">
+            <h1 className="mb-6 text-3xl text-black sm:text-4xl">
                 Life and Hobbies
             </h1>
           </AnimatedCard>
@@ -125,7 +125,7 @@ export default function Home() {
 
         <section
           id="Contact"
-          className="flex flex-col gap-4 px-6 py-12 sm:px-10 md:flex-row md:items-center md:justify-around lg:px-64 lg:py-16"
+          className="flex flex-col gap-4 px-6 py-12 sm:px-10 md:flex-row md:items-center md:justify-around lg:px-64 lg:py-16 text-black"
         >
           <h3 className="text-3xl font-black md:mb-0">
             CONTACT ME

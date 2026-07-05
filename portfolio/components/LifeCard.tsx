@@ -12,7 +12,7 @@ export default function ProjectCard({
   description,
 }: Props) {
   return (
-    <div className="bg-white/50 rounded-2xl p-4 shadow-lg">
+    <div className="bg-white/50 rounded-2xl p-4 shadow-lg text-black">
 
       <div className="flex flex-col gap-4 sm:flex-row">
 
@@ -27,7 +27,7 @@ export default function ProjectCard({
 
         <div>
 
-          <h3 className="font-black uppercase text-xl sm:text-2xl">
+          <h3 className="text-xl sm:text-2xl">
             {title}
           </h3>
 
